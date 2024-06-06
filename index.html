@@ -3,21 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <title>Dia Mundial da alimentação</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Cadastro de Usuário</h1>
-    <form id="registerForm">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="age">Idade:</label>
-        <input type="number" id="age" name="age" required><br><br>
-        <button type="submit">Cadastrar</button>
-    </form>
-    <div id="message"></div>
+    <header>
+        <h1>Blog do Dia Mundial da alimentação</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#posts">Postagens</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img src="./Imagem do WhatsApp de 2024-06-06 à(s) 11.34.42_71099d43.jpg" alt="Imagem 1"></div>
+                <div class="slide"><img src="./Imagem do WhatsApp de 2024-06-06 à(s) 11.34.42_9e6eeeef.jpg" alt="Imagem 2"></div>
+                <div class="slide"><img src="./Imagem do WhatsApp de 2024-06-06 à(s) 11.34.42_f4d86ca5.jpg" alt="Imagem 3"></div>
+                <div class="slide"><img src="./Imagem do WhatsApp de 2024-06-06 à(s) 11.34.43_6c890e7a.jpg" alt="Imagem 3"></div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="about">
+        <h2>Sobre o Evento</h2>
+        <p>Os alunos, orientados pelos professores, prepararam uma série de atividades e exposições que ilustraram o papel dos alimentos na nossa vida diária. A apresentação foi dividida em segmentos, cada um destacando diferentes aspectos da alimentação e da agricultura sustentável.
+
+            O primeiro segmento focou nos gêneros alimentícios básicos. Os estudantes explicaram a origem de alimentos como arroz, feijão, milho e trigo, detalhando o processo desde o cultivo até chegar à mesa dos consumidores. Utilizando maquetes e painéis informativos, eles ilustraram as etapas da produção agrícola e a importância da agricultura familiar na manutenção desses processos.</p>
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Informações de contato...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blog do Evento Alimentício. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,72 +1,69 @@
-:root {
-    --header-color: #01a3a4;
-    --bg-color: #eee;
-}
-
-* {
-    font-family: sans-serif;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
-}
-
-body {
-    background-color: var(--bg-color);;
-}
-
-.container {
-    max-width: 640px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 header {
-    background-color: var(--header-color);
+    background-color: yellowgreen;
+    color: palegreen;
+    padding: 10px 20px;
     text-align: center;
-    height: 30vh;
 }
 
-header .container {
-    position: relative;
-    bottom: -50%;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.profile-avatar {
-    border-radius: 50%;
-    margin-bottom: 24px;
-    width: 180px;
-    height: 180px;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.profile-name {
-    font-size: 2em;
-}
-
-.profile-username {
-    margin: 16px 0 32px;
-    font-size: 1.1em;
-}
-
-.profile-link {
-    background-color: var(--header-color);
-    color: var(--bg-color);
-    padding: 8px 16px;
-    display: inline-block;
-    margin-top: 24px;
+nav ul li a {
+    color:palegreen;
     text-decoration: none;
 }
 
-.numbers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.numbers-item {
-    font-size: 3em;
-    font-weight: bold;
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.numbers-item h4 {
-    font-size: .3em;
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: palegreen;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
 }
